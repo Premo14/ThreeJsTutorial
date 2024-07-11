@@ -8,7 +8,7 @@ const scene = new THREE.Scene();
 
 // Create our sphere
 const geometry = new THREE.SphereGeometry(3, 64, 64);
-const material = new THREE.MeshBasicMaterial({
+const material = new THREE.MeshStandardMaterial({
     color: "#00ff83",
     roughness: 0.5,
 })
@@ -24,7 +24,7 @@ const sizes = {
 // Light
 const light = new THREE.PointLight(0xffffff, 1, 100)
 light.position.set(0, 10, 10)
-light.intensity = 1.25
+light.intensity = 100
 scene.add(light)
 
 // Camera
